@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+$font-body: "Roboto", sans-serif;
+
+$color-primary: #5B5555; 
+$color-white: #fafafa;
+$color-pink: #b55039;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+    background-color: $color-primary;
+}
+
+
+a:link,
+a:visited {
+    text-decoration: none;
+    width: 33%;
+    height: 100%;
+    color: white;
+}

@@ -1,0 +1,59 @@
+nav,
+nav * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    }
+
+nav {
+
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    font-size: 1.25em;
+    color: white;
+
+}
+
+#logo {
+    width: 15%;
+    height: 100%;
+    justify-content: center;
+}
+
+#nav-links {
+    height: 100%;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.intro {
+    text-align: start;
+    justify-content: center;
+    height: 500px;
+
+    &__heading {
+        font-size: 50px;
+        font-weight: bold;
+        color: $color-white;
+    }
+
+    &__sub-heading {
+        font-size: 25px;
+        font-weight: bold;
+        color: $color-white;
+        margin: 20px 0;
+    }
+
+    &__button {
+        padding: 5px;
+        margin: auto;
+        font-weight: bold;
+        border-radius: 2px;
+        background-color: $color-pink;
+    }
+
+}

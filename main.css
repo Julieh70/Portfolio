@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #5B5555;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  width: 33%;
+  height: 100%;
+  color: white;
+}
+
+nav,
+nav * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+}
+
+nav {
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  font-size: 1.25em;
+  color: white;
+}
+
+#logo {
+  width: 15%;
+  height: 100%;
+  justify-content: center;
+}
+
+#nav-links {
+  height: 100%;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.intro {
+  text-align: start;
+  justify-content: center;
+  height: 500px;
+}
+.intro__heading {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fafafa;
+}
+.intro__sub-heading {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fafafa;
+  margin: 20px 0;
+}
+.intro__button {
+  padding: 5px;
+  margin: auto;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: #b55039;
+}
+
+#left-panel {
+  width: 30%;
+  height: 400px;
+}
+
+#right-panel {
+  width: 60%;
+}
+
+header {
+  width: 95%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
