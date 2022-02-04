@@ -69,9 +69,30 @@ nav {
   background-color: #b55039;
 }
 
+.parent {
+  position: relative;
+}
+
+.one {
+  position: absolute;
+  top: -400px;
+  transform: rotate(-5.94deg);
+}
+
+.two {
+  position: absolute;
+  top: -200px;
+  left: 50px;
+}
+
+.three {
+  position: absolute;
+  top: -300px;
+  left: 420px;
+}
+
 #left-panel {
   width: 30%;
-  height: 400px;
 }
 
 #right-panel {
