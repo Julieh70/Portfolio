@@ -34,8 +34,8 @@ nav {
 }
 
 #logo {
-  width: 15%;
-  height: 100%;
+  width: 249.69;
+  height: 15%;
   justify-content: center;
 }
 
@@ -45,10 +45,16 @@ nav {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+  nav {
+    width: auto;
+  }
+}
 .intro {
   text-align: start;
   justify-content: center;
-  height: 500px;
+  align-items: center;
+  height: 600px;
 }
 .intro__heading {
   font-size: 50px;
@@ -59,7 +65,7 @@ nav {
   font-size: 25px;
   font-weight: bold;
   color: #fafafa;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 .intro__button {
   padding: 5px;
@@ -71,38 +77,74 @@ nav {
 
 .parent {
   position: relative;
+  height: 600px;
 }
 
-.one {
+.child {
   position: absolute;
-  top: -400px;
+  top: 0;
+}
+
+.child-1 {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+}
+
+.child-2 {
+  position: absolute;
+  top: 0px;
   transform: rotate(-5.94deg);
 }
 
-.two {
+.child-3 {
   position: absolute;
-  top: -200px;
-  left: 50px;
-}
-
-.three {
-  position: absolute;
-  top: -300px;
-  left: 420px;
+  top: 90px;
+  left: 425px;
 }
 
 #left-panel {
-  width: 30%;
+  width: 275px;
+  margin-top: 200px;
 }
 
 #right-panel {
-  width: 60%;
+  width: 758px;
 }
 
 header {
-  width: 95%;
+  margin-left: 0px;
+  margin-top: 25px;
+  padding: 0px;
+  padding-top: 50px;
+  width: 100%;
   height: 1000px;
   display: flex;
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768) {
+  #right-panel .child-3 {
+    left: 100px;
+    width: 188px;
+  }
+
+  #right-panel .child-2 {
+    left: 30px;
+  }
+
+  #right-panel .child-1 {
+    width: 372px;
+    right: 0px;
+    padding: 0px;
+  }
+
+  header {
+    margin-left: 0;
+    margin-top: 150px;
+    padding: 0;
+  }
 }

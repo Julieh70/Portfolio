@@ -1,17 +1,60 @@
 
 #left-panel {
-    width: 30%;
+    width: 275px;
+    margin-top:200px ;
    
 }
 
 #right-panel {
-    width: 60%;
-}
+    width: 758px;
+                
+    }
+    
+
 
 header {
-    width: 95%;
+    margin-left: 0px;
+    margin-top: 25px;
+    padding: 0px;
+    padding-top: 50px;
+    width: 100%;
     height: 1000px;
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+
+
+@media screen and (max-width: 768) {
+    #right-panel .child-3 {
+        left: 100px;
+        width: 188px;
+                }
+
+     #right-panel .child-2 {
+         left: 30px;
+     }           
+    #right-panel .child-1 {
+        width: 372px;
+        right: 0px;
+        padding: 0px;
+    }
+    header {
+               margin-left: 0;
+               margin-top: 150px;
+               padding: 0;
+           }
+    
+}
+
+
+
+
+
+    
+           
+    
+ 
