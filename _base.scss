@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 $font-body: "Roboto", sans-serif;
+$font-nutshell: "victoria-typewriter";
+$font-typewriter:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 $color-primary: #5B5555; 
 $color-white: #fafafa;
 $color-pink: #b55039;
+$color-oldwhite: antiquewhite;
+$color-typwriter: darkslategray;
+$color-lightgray: lightgray;
 
 * {
     margin: 0;

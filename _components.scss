@@ -8,7 +8,7 @@ nav * {
     margin: 5px;
     }
 
-nav {
+.nav {
 
     justify-content: space-between;
     width: 100%;
@@ -39,6 +39,12 @@ nav {
     
 }
 
+@media screen and (max-width: 768px) {
+    #nav-links {
+        width: auto;
+    }
+    
+}
 
 .intro {
     text-align: start;
@@ -71,33 +77,37 @@ nav {
 .parent {
     position: relative;
     height: 600px;
-}
 
     .child {
     position: absolute;
     top: 0;
-    
-}
+    }
 
     .child-1 {
     position: absolute;
     top: 200px;
     left: 10px;
-}
+    max-width: 100%;
+    height: auto;
+    }
 
     .child-2 {
     position: absolute;
     top: 0px;
     transform: rotate(-5.94deg);
-   
-    
-}
+    max-width: 100%;
+    height: auto;  
+    }
 
     .child-3 {
     position: absolute;
     top: 90px;
     left:425px;
+    max-width: 100%;
+    height: auto;
+    }
 }
+
 
 
 .projects-title {
@@ -106,47 +116,77 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 150px;
-    text-decoration: underline  $color-pink;
+    text-decoration-line: underline;
+    text-decoration-color:  $color-pink;
     padding: 50px;
    
 }
 
-.about-title {
+.About {
 
-    color: $color-white;
-    display: flex;
-    justify-content: center;
-    margin-top: 150px;
-    text-decoration: underline  $color-pink;
-    padding: 50px;
-   
-}
+    .about-title {
 
-.about_section {
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-padding: 50px;
-margin: 50px;
-margin-top: 150px;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        text-decoration: underline  $color-pink;
+        padding: 50px;
+    }
 
-}
+    .about_section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 50px;
+        margin-top: 150px;
+       
+    
 
-.about_img {
-    width: 33%;
-    height: 600px;
-    background-color: lightgray;
-}
+        .about_img {
+            max-width: 100%;
+            height: auto;
+            padding: 0px;
+            background-color: lightgray;
+            border: 20px $color-white;
+            border-width: 1cm;
+            border-style: solid;
+        }
 
-.about_overview {
-    width: 43%;
-    height: 600px;
-    padding: 10px;
-    background-color: lightgray;
-    font-family: $font-body;
-    font-size: 25px;
-}
+        .about_overview {
+            width: 525px;
+            height: auto;
+            padding: 10px;
+            background-color: $color-lightgray;
+            font-family: $font-body;
+            font-size: 25px;
+            border: 0;
+            border-width:0 ;
+            border-style: 0;
+            margin-top: 20px;
+           
 
+            .paragraph {
+                background-color: $color-lightgray;
+                          }
+            .list {
+                text-decoration: none;
+                font-family: $font-typewriter ;                
+                background-color: $color-oldwhite;
+                color: $color-typwriter;
+
+                .list-1 {
+                    background-color: $color-oldwhite;
+
+                    #inline-list {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}       
 
 
 
@@ -165,38 +205,58 @@ margin-top: 150px;
     .contact_header {
         font-weight: bold;
         color: $color-white;
+        display: flex;
+        justify-content: center;
     }
+
     .contact_container {
         height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         .contact_mail {
             padding: 0px;
+            display: flex;
+            justify-content: flex-start;
         }
 
         .contact_icons {
+            display: flex;
+            justify-content: center;
 
           
             .fa-github-square {
                 width: 50px;
                 height: 50px;
-            background-color: $color-pink;
+                background-color: $color-pink;
+                display: flex;
+                justify-content: center;
             }
         
             .fa-linkedin {
                 width: 50px;
                 height: 50px;
                 background-color: $color-pink;
+                display: flex;
+                justify-content: center;
             }
             .fa-paper-plane {
                 width: 50px;
                 height: 50px;
                 background-color: $color-pink;
+                display: flex;
+                justify-content: center;
             }
         
         }
     }
-    
 }
+
+
+    
+    
+
 
 
 

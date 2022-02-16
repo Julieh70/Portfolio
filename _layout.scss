@@ -1,6 +1,7 @@
 
 body {
     background-color: $color-primary;
+    background-image:none;
     max-width: 1400px;
     margin: auto;
 }
@@ -17,54 +18,124 @@ header {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-}
 
+    #left-panel {
+        width: 275px;
+        margin-top:200px ;
+   }
 
-
-#left-panel {
-    width: 275px;
-    margin-top:200px ;
-   
-}
-
-#right-panel {
-    width: 758px;
-                
+    #right-panel {
+        width: 758px;           
     }
-    
-@media screen and (max-width: 768) {
-    #right-panel .child-3 {
-        left: 100px;
-        width: 188px;
-                }
-
-     #right-panel .child-2 {
-         left: 30px;
-     }           
-    #right-panel .child-1 {
-        width: 372px;
-        right: 0px;
-        padding: 0px;
-    }
-    
 }
 
-    .projects_section {
-        
-        display: grid;
-       
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr ;
-        gap: 80px;
-        padding: 50px;
-        background-color:$color-primary;
+        #right-panel .child-3 {
+            left: 0px;
+            
+            }
 
-        div {
-            width: 350px;
-            height: 350px;
-            background-color: lightgrey;
+        #right-panel .child-2 {
+             left: 30px;
+        }           
+        #right-panel .child-1 {
+            width: 372px;
+            right: 0px;
+            padding: 0px;
         }
+    
+   
+    @media screen and (max-width: 768px) {
+
+        header {           
+            height: 1200px;
+            margin-top: 20px;  
+            padding-top: 20px;
+            }
+        }
+
+    @media screen and (max-width: 768px) {
+
+        #right-panel .child-1 {
+            top: 330px;
+        }
+
+        #right-panel .child-2 {
+           top: 30px; 
+        }
+
+
+        #right-panel .child-3 {
+            top: 580px;
+            width: 280px;
+        }
+        
     }
+
+    
+
+
+.Projects {
+
+    width: auto;
+    background-image: none;
+   
+        .projects_section {
+            background-image: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            gap: 80px;
+            
+            .project-div {
+                background-color: grey;
+                position: relative;
+            }
+                
+                .pic-title {
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    top: 10px;
+                }
+        
+                .child-one {
+                    background-color: bisque;
+                    height: 349px;
+                    width: 340px;
+                    margin: 20px;
+                    position: relative;
+                    top: 40px;
+                    margin-bottom: 20px;
+                }
+        
+                .child-two {
+                    background-color: lightgrey;
+                    width: 300px;
+                    height: 300px;
+                    position: absolute;
+                    top: 150px;
+                    left: 65px;
+                }
+        
+                .pic2 {
+                    transform: rotate(9 deg);
+                    left: 100px;
+                }
+        
+                .project-buttons-box {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding-top: 40px;
+                }
+        
+                .project-buttons {
+                    font-size: medium;
+                    color: black;
+                }
+            }
+            
 
     @media  screen and (max-width: 1350px) {
         .projects_section { 
@@ -78,14 +149,17 @@ header {
             grid-template-columns: 1fr;
         }
     }
-        
+
+}
     
 
     .footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
+
+    
 
 
 
