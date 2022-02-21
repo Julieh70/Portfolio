@@ -158,7 +158,7 @@ nav * {
   margin-top: 20px;
 }
 .About .about_section .about_overview .paragraph {
-  background-color: lightgray;
+  background-color: red;
 }
 .About .about_section .about_overview .list {
   text-decoration: none;
@@ -169,7 +169,7 @@ nav * {
 .About .about_section .about_overview .list .list-1 {
   background-color: antiquewhite;
 }
-.About .about_section .about_overview .list .list-1 #inline-list {
+.About .about_section .about_overview .list #inline-list {
   display: inline-block;
 }
 
@@ -257,17 +257,21 @@ header #right-panel {
 }
 
 #right-panel .child-3 {
-  left: 0px;
+  left: 400px;
+  border: 10px solid #fafafa;
 }
 
 #right-panel .child-2 {
-  left: 30px;
+  left: 0px;
+  top: 0px;
+  border: 10px solid #fafafa;
 }
 
 #right-panel .child-1 {
-  width: 372px;
+  width: 600px;
   right: 0px;
   padding: 0px;
+  border: 10px solid #fafafa;
 }
 
 @media screen and (max-width: 768px) {
@@ -276,17 +280,13 @@ header #right-panel {
     margin-top: 20px;
     padding-top: 20px;
   }
-}
-@media screen and (max-width: 768px) {
-  #right-panel .child-1 {
+  header #right-panel .child-1 {
     top: 330px;
   }
-
-  #right-panel .child-2 {
+  header #right-panel .child-2 {
     top: 30px;
   }
-
-  #right-panel .child-3 {
+  header #right-panel .child-3 {
     top: 580px;
     width: 280px;
   }
@@ -356,6 +356,7 @@ header #right-panel {
 }
 
 .footer {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;

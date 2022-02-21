@@ -30,45 +30,47 @@ header {
 }
 
         #right-panel .child-3 {
-            left: 0px;
-            
+            left: 400px;
+            border: 10px solid $color-white;
             }
 
         #right-panel .child-2 {
-             left: 30px;
+             left: 0px;
+             top: 0px;
+             border: 10px solid $color-white;
         }           
         #right-panel .child-1 {
-            width: 372px;
+            width: 600px;
             right: 0px;
             padding: 0px;
+            border: 10px solid $color-white;
         }
     
    
-    @media screen and (max-width: 768px) {
+    
 
+    @media screen and (max-width: 768px) {
         header {           
             height: 1200px;
             margin-top: 20px;  
             padding-top: 20px;
+
+            #right-panel .child-1 {
+                top: 330px;
             }
-        }
-
-    @media screen and (max-width: 768px) {
-
-        #right-panel .child-1 {
-            top: 330px;
-        }
-
-        #right-panel .child-2 {
-           top: 30px; 
-        }
-
-
-        #right-panel .child-3 {
-            top: 580px;
-            width: 280px;
-        }
-        
+    
+            #right-panel .child-2 {
+               top: 30px; 
+            }
+    
+    
+            #right-panel .child-3 {
+                top: 580px;
+                width: 280px;
+            }
+            
+            }
+       
     }
 
     
@@ -154,6 +156,7 @@ header {
     
 
     .footer {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
