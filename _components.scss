@@ -108,7 +108,15 @@ nav {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .parent {
+        height: 900px;
+    }
 
+    #nav-links {
+        margin-left: 25px;
+    }
+}
 
 .projects-title {
 

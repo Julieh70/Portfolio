@@ -73,6 +73,35 @@ header {
        
     }
 
+    @media  screen and (max-width: 550px) {
+        header  {
+            
+            margin-left: 10px;
+
+            #right-panel .child-1 {
+                width: 350px;
+                left: 0px;
+                top: 290px;
+            }
+
+            #right-panel .child-2 {
+                width: 230px;
+                top: 80px;
+            }
+
+            #right-panel .child-3 {
+                top: 550px;
+                left: 80px;
+                transform: rotate(5.94deg)
+            }
+
+            #left-panel {
+                margin-top: 0;
+            }
+        }
+    }
+        
+    
     
 
 
